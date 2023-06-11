@@ -9,8 +9,8 @@ from src import util
 from src.body import Body
 from src.hand import Hand
 
-body_estimation = Body('model/body_pose_model.pth')
-hand_estimation = Hand('model/hand_pose_model.pth')
+body_estimation = Body('/Users/solsol/Documents/Programming/opensourcesw/prj/model/body_pose_model.pth')
+hand_estimation = Hand('/Users/solsol/Documents/Programming/opensourcesw/prj/model/hand_pose_model.pth')
 
 print(f"Torch device: {torch.cuda.get_device_name()}")
 

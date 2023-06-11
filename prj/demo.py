@@ -8,10 +8,10 @@ from src import util
 from src.body import Body
 from src.hand import Hand
 
-body_estimation = Body('/Users/solsol/Documents/Programming/opensourcesw/prj/test/pytorch-openpose/model/body_pose_model.pth')
-hand_estimation = Hand('/Users/solsol/Documents/Programming/opensourcesw/prj/test/pytorch-openpose/model/hand_pose_model.pth')
+body_estimation = Body('/Users/solsol/Documents/Programming/opensourcesw/prj/model/body_pose_model.pth')
+hand_estimation = Hand('/Users/solsol/Documents/Programming/opensourcesw/prj/model/hand_pose_model.pth')
 
-test_image = '/Users/solsol/Documents/Programming/opensourcesw/prj/test/pytorch-openpose/images/demo.jpg'
+test_image = '/Users/solsol/Documents/Programming/opensourcesw/prj/images/22.jpeg'
 oriImg = cv2.imread(test_image)  # B,G,R order
 candidate, subset = body_estimation(oriImg)
 canvas = copy.deepcopy(oriImg)
